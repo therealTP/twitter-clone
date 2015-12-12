@@ -12,7 +12,8 @@
 				<div id="profile-summary">
 					<div class="content">
 						<img class='avatar' src='img/alagoon.jpg' />
-						<p>Your Name Here</p>
+						<p>Davy Jones</p>
+						<p id="handle">@davy-jones</p>
 					</div>
 				</div>
 				<div id="tweet-content">
@@ -21,15 +22,15 @@
 					<!-- HINT: jQuery ".on" eventHandler -->
 					<textarea class="tweet-compose" placeholder="Compose new Tweet..."/></textarea>
 
-					<!-- STEP 1: Initially, the Tweet button and the character count button below should be hidden. -->
+					<!-- STEP 1: DONE Initially, the Tweet button and the character count button below should be hidden. -->
 					<!-- HINT: Use CSS -->
 					<div id="tweet-controls">
 
-						<!-- STEP 3: As the user types the character count should decrease. Once it hits 10 character or less the count should turn red -->
+						<!-- STEP 3: DONE As the user types the character count should decrease. Once it hits 10 character or less the count should turn red -->
 						<!-- HINT: jQuery keypress events (keypress, keydown, keyup, etc) -->
 						<div id="char-count">140</div>
 
-						<!-- STEP 4: If the user puts in more than 140 characters, the tweet button should be disabled (and re-enabled when there are <= 140 chars) -->
+						<!-- STEP 4: DONE If the user puts in more than 140 characters, the tweet button should be disabled (and re-enabled when there are <= 140 chars) -->
 						<!-- HINT: javascript length method -->
 						<button class="button" id="tweet-submit">Tweet</button>
 					</div>
@@ -39,7 +40,7 @@
 				<h2>Tweets</h2>
 				<div id="stream">
 
-					<!-- STEP 5: When the user successfully inputs characters and clicks the “Tweet” button, a new tweet should be created and added to the tweet stream in the main column, using the user’s fake profile image in the top left and username/fullname. -->
+					<!-- STEP 5: DONE When the user successfully inputs characters and clicks the “Tweet” button, a new tweet should be created and added to the tweet stream in the main column, using the user’s fake profile image in the top left and username/fullname. -->
 					<!-- HINT: jQuery ".prepend" method -->
 					<div class="tweet">
 						<div class="content">
@@ -51,7 +52,7 @@
 							<!-- HINT: Add to what you created in Step 5 -->
 							<p class="tweet-text">Today is an amazing day.</p>
 
-							<!-- STEP 6: The tweet actions below should only show up when you hover over the tweet. Otherwise, they should be hidden. -->
+							<!-- STEP 6: DONE The tweet actions below should only show up when you hover over the tweet. Otherwise, they should be hidden. -->
 							<!-- HINT: CSS ":hover" pseudo element -->
 							<div class="tweet-actions">
 								<ul>
@@ -62,7 +63,7 @@
 								</ul>
 							</div>
 
-							<!-- STEP 7: The Retweets/timestamp/Reply areas below should also be hidden by default. These should only expand if you click on the tweet. Use a jQuery animation to accomplish the reveal, similar to how it’s done on Twitter.com -->
+							<!-- STEP 7: DONE The Retweets/timestamp/Reply areas below should also be hidden by default. These should only expand if you click on the tweet. Use a jQuery animation to accomplish the reveal, similar to how it’s done on Twitter.com -->
 							<!-- HINT: jQuery ".on" eventHandler -->
 							<div class="stats">
 								<div class="retweets">
@@ -83,7 +84,7 @@
 									</div>
 								</div>
 
-								<!-- BLACK DIAMOND: Make the timestamp below similar to how they look on Twitter (1h, 18m, 1m) and use the jQuery timeago plugin to make them automatic. -->
+								<!-- BLACK DIAMOND: DONE Make the timestamp below similar to how they look on Twitter (1h, 18m, 1m) and use the jQuery timeago plugin to make them automatic. -->
 								<!-- HINT: Refer to timeago documentation -->
 								<div class="time">
 									1:04 PM - 19 Sep 13
@@ -178,5 +179,7 @@
 				</div><!-- #stream -->
 			</div><!-- #main -->
 		</div><!-- #page-container -->
+		<script type="text/javascript" src='js/jquery-2.0.3.min.js'></script>
+		<script type="text/javascript" src='js/animations.js'></script>
 	</body>
 </html>
